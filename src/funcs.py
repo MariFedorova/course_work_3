@@ -23,3 +23,7 @@ def convert_date(date):
     date = date.split("-")
     new_date = f'{date[2]}.{date[1]}.{date[0]}'
     return new_date
+
+def mask_card_number(card_number):
+    new_card_number = f'{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}'
+    return new_card_number
