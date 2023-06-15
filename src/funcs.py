@@ -13,3 +13,8 @@ def sort_operations(state, dict_):
         if item.get("state") == state:
             executed.append(item)
     return executed
+
+def sort_by_date(data):
+    data.sort(key=lambda x: x['date'], reverse=True)
+    return data
+
