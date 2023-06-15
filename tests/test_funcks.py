@@ -1,6 +1,6 @@
 import pytest
 
-from funcs import sort_operations, sort_by_date, convert_date, mask_card_number,mask_account_number
+from src.funcs  import sort_operations, sort_by_date, convert_date, mask_card_number,mask_account_number
 
 @pytest.fixture
 def file():
