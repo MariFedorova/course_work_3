@@ -27,3 +27,8 @@ def convert_date(date):
 def mask_card_number(card_number):
     new_card_number = f'{card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}'
     return new_card_number
+
+
+def mask_account_number(acc_number):
+    new_acc_number = f'**{acc_number[-4:]}'
+    return new_acc_number
